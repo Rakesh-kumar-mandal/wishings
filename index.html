@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wishings</title>
+    <style>
+        #main {
+            width: 640px;
+            padding: 30px;
+            margin: 260px auto;
+            box-shadow: 0 0 15px blue;
+            background-color: white;
+            border-radius: 25px;
+        }
+
+        body {
+            background-color: rgb(159, 255, 80);
+        }
+
+        button {
+            border-radius: 25px;
+            background-color: pink;
+            padding: 10px;
+            margin: 20px;
+            box-shadow: 0 0 20px blue;
+            font-size: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+
+
+        }
+
+        #main:hover {
+            background-color: rgb(250, 233, 135);
+        }
+
+        button:hover {
+            font-size: 28px;
+
+        }
+
+
+
+        h1 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 45px;
+            text-decoration: underline;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Wishings</h1>
+    <div id="main">
+        <h2 value="Rakesh here" id="get">Rakesh here</h2>
+        <button onclick="H1()" id="Morning">Good Morning</button>
+        <button onclick="H2()" id="evening">Good Evening</button>
+        <button onclick="H3()" id="night">Good night</button>
+    </div>
+    <script>
+        function H1() {
+            var getM = document.getElementById('get');
+            getM.innerText = "Good Morning";
+
+        }
+        function H2() {
+            var getE = document.getElementById('get');
+            getE.innerText = "Good Evening";
+        }
+        function H3() {
+            var getN = document.getElementById('get');
+            getN.innerText = "Good night";
+        }
+    </script>
+
+</body>
+
+</html>
